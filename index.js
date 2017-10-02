@@ -198,7 +198,7 @@ class HandlebarsPlugin {
         fs.outputFileSync(targetFilepath, result, "utf-8");
         this.options.onDone(Handlebars, targetFilepath);
         // notify webpack about newly filepath file (wds)
-        this.registerGeneratedFile(targetFilepath, result);
+        // this.registerGeneratedFile(targetFilepath, result);
 
         log(chalk.grey(`created output '${targetFilepath.replace(`${process.cwd()}/`, "")}'`));
     }
